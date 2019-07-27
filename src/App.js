@@ -1,51 +1,72 @@
 import React from 'react';
-import Navigation from './components/navigation'
 import styled from 'styled-components';
-import Copyright from "./components/copyright"
+import Nav from './components/nav'
+import Loading from './components/loading'
+import Header from './components/header'
+import Scrollbar from 'react-smooth-scrollbar';
 
 const Container = styled.div`
-  padding-top:80px;
-  min-height: 150vh;
-  width:100%;
-  position: relative;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:1300px;
+  padding-bottom:300px;
 `;
 
 class AppContainer extends React.Component {
 
   state = {
-    scrollTop: 0
+    scrollTop: 0,
+    loading: true
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.onScroll)
+    setTimeout(() => {
+      this.finishLoading();
+    }, 2000);
   }
 
 
   render() {
-    const { scrollTop } = this.state;
-    return <App scrollTop={scrollTop} />
+    const { loading } = this.state;
+    return <App loading={loading} />
   }
 
 
   onScroll = e => {
+    const { scrollTop } = this.state;
+    const nextScrollTop = e.srcElement.scrollingElement.scrollTop;
+
+  }
+
+  finishLoading = () => {
     this.setState({
-      scrollTop: e.srcElement.scrollingElement.scrollTop
+      loading: false
     })
   }
 
 
 }
 
-function App({ scrollTop }) {
+function App({ loading }) {
   return (
-    <Container>
-      <Navigation scrollTop={scrollTop} />
-      My Portfolio
+    <Scrollbar
+    >
+      <Container id="my-scrollbar">
+        {loading && <Loading></Loading>}
+        {!loading && <>
+          <Nav />
+          <Header />
+        </>}
 
-        <Copyright />
+      </Container>
+    </Scrollbar>
 
-    </Container>
+
+
   );
 }
+
 
 export default AppContainer;
