@@ -22,9 +22,11 @@ export const BigText = styled.div`
     line-height:210.37px;
     color:${props => props.white ? 'white' : 'black'};
     animation:${FadeIn} 1s ease-in;
+    z-index:3;
 `;
 
 export const DefaultText = styled.div`
+z-index:3;
     font-size:21.6296px;
     letter-spacing:0.4px;
     user-select:none;

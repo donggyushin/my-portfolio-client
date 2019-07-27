@@ -4,6 +4,7 @@ import Nav from './components/nav'
 import Loading from './components/loading'
 import Header from './components/header'
 import Scrollbar from 'react-smooth-scrollbar';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 const Container = styled.div`
   display:flex;
@@ -51,17 +52,19 @@ class AppContainer extends React.Component {
 
 function App({ loading }) {
   return (
-    <Scrollbar
-    >
-      <Container id="my-scrollbar">
-        {loading && <Loading></Loading>}
-        {!loading && <>
-          <Nav />
-          <Header />
-        </>}
+    <ParallaxProvider>
+      <Scrollbar
+      >
+        <Container id="my-scrollbar">
+          {loading && <Loading></Loading>}
+          {!loading && <>
+            <Nav />
+            <Header />
+          </>}
 
-      </Container>
-    </Scrollbar>
+        </Container>
+      </Scrollbar>
+    </ParallaxProvider>
 
 
 
