@@ -21,7 +21,7 @@ export const BigText = styled.div`
     font-weight:400;
     line-height:210.37px;
     color:${props => props.white ? 'white' : 'black'};
-    animation:${FadeIn} 1s ease-in;
+    /* animation:${FadeIn} 1s ease-in; */
     z-index:3;
 `;
 
@@ -32,7 +32,7 @@ z-index:3;
     user-select:none;
     flex-grow:1;
     flex-shrink:1;
-    animation:${FadeIn} 1s ease-in;
+    /* animation:${FadeIn} 1s ease-in; */
     color:${props => props.white ? 'white' : 'black'};
     cursor: ${props => props.hover && 'pointer'};
     ${props => props.hover && `&:hover::after {
