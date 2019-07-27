@@ -31,7 +31,7 @@ class Header extends React.Component {
             </Parallax> */}
             <Container style={{
                 position: 'relative',
-                top: 100,
+                top: 85,
                 marginTop: -50
             }}>
                 <BigText >LAZY</BigText>
