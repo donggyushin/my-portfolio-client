@@ -10,7 +10,7 @@ const Container = styled.div`
     margin-top:300px;
     padding-bottom:300px;
     position: relative;
-    left:58px;
+    left:37px;
 `;
 
 const Row = styled.div`
