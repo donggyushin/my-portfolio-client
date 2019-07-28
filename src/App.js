@@ -3,15 +3,17 @@ import styled from 'styled-components';
 import Nav from './components/nav'
 import Loading from './components/loading'
 import Header from './components/header'
-import Scrollbar from 'react-smooth-scrollbar';
 import { ParallaxProvider } from 'react-scroll-parallax';
+import Section from './components/section'
+import MovingVeryBigText from './components/movingVeryBigText'
+import MyStory from './components/mystory'
+
 
 const Container = styled.div`
   display:flex;
   flex-direction:column;
   align-items:center;
   min-width:1300px;
-  padding-bottom:300px;
 `;
 
 class AppContainer extends React.Component {
@@ -26,6 +28,8 @@ class AppContainer extends React.Component {
     setTimeout(() => {
       this.finishLoading();
     }, 2000);
+
+
   }
 
 
@@ -53,17 +57,20 @@ class AppContainer extends React.Component {
 function App({ loading }) {
   return (
     <ParallaxProvider>
-      <Scrollbar
-      >
-        <Container id="my-scrollbar">
-          {loading && <Loading></Loading>}
-          {!loading && <>
-            <Nav />
-            <Header />
-          </>}
 
-        </Container>
-      </Scrollbar>
+
+      <Container id="my-scrollbar">
+        {loading && <Loading></Loading>}
+        {!loading && <>
+          <Nav />
+          <Header />
+          <Section />
+          <MovingVeryBigText text={'TELL ME MORE'} />
+          <MyStory />
+        </>}
+
+      </Container>
+
     </ParallaxProvider>
 
 

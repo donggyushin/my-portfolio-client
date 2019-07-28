@@ -15,6 +15,15 @@ export const Image = styled.img`
     width:100%;
 `
 
+export const NormalText = styled.div`
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:84.8px;
+    line-height:131.04px;
+    user-select:none;
+    width:100%;
+`;
+
+
 
 export const BigText = styled.div`
     font-size:238.519px;
@@ -59,3 +68,18 @@ z-index:3;
     
 `;
 
+export const VeryBigText = styled.div`
+    font-size:322.963px;
+    font-weight:400;
+    line-height:419.852px;
+    user-select:none;
+`
+
+export const SmallText = styled.div`
+    font-size:22px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight:400;
+    line-height:62.74px;
+    user-select:none;
+
+`
