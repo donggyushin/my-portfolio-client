@@ -9,6 +9,7 @@ const Container = styled.div`
     white-space:nowrap;
     margin-top:400px;
     padding-bottom:300px;
+    overflow-x:hidden;
 `;
 
 class MovingVeryBigText extends React.Component {
