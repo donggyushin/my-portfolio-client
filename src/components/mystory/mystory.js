@@ -32,7 +32,7 @@ class MyStory extends React.Component {
                 &nbsp;
 
 
-                that i go to in 2013.
+                that is my school in 2013.
                 I can say that time is the beginning of my developer life.
                 But that's not the time when i started coding. Frankly say, I started to coding very long time after entering university.
                 I was not interested in coding ever.
@@ -43,7 +43,7 @@ class MyStory extends React.Component {
                 height: 100
             }} />
             <SmallText >
-                I came back university lately, then I started coding from that time. Still it is difficult and boring for me,
+                I came back university lately(2018), then I started coding from that time. Still it is difficult and boring for me, But
                 I was rapidly fall in love with web and mobile developing not like my expectation.
             </SmallText>
             <div style={{
