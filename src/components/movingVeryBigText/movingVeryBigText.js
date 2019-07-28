@@ -15,7 +15,7 @@ class MovingVeryBigText extends React.Component {
     render() {
         const { text } = this.props;
         return <Container>
-            <Parallax className="custom-class" x={[10, -10]} tagOuter="div">
+            <Parallax className="custom-class" x={[5, -30]} tagOuter="div">
                 <VeryBigText>{text}</VeryBigText>
             </Parallax>
 

@@ -7,6 +7,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import Section from './components/section'
 import MovingVeryBigText from './components/movingVeryBigText'
 import MyStory from './components/mystory'
+import Career from './components/career'
 
 
 const Container = styled.div`
@@ -67,6 +68,7 @@ function App({ loading }) {
           <Section />
           <MovingVeryBigText text={'TELL ME MORE'} />
           <MyStory />
+          <Career />
         </>}
 
       </Container>

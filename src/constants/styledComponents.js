@@ -10,6 +10,7 @@ const FadeIn = keyframes`
     }
 `;
 
+
 export const Image = styled.img`
     animation:${FadeIn} 1s ease-in;
     width:100%;
@@ -21,6 +22,11 @@ export const NormalText = styled.div`
     line-height:131.04px;
     user-select:none;
     width:100%;
+    ${props => props.grey === true && `
+        color:gainsboro;
+    `}
+    transition-duration:0.3s;
+    
 `;
 
 
@@ -68,18 +74,73 @@ z-index:3;
     
 `;
 
-export const VeryBigText = styled.div`
-    font-size:322.963px;
+export const Row = styled.div`
+    display:flex;
+`;
+
+export const SmallTextHoverEffect = styled.span`
+font-size:22px;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight:400;
-    line-height:419.852px;
+    line-height:62.74px;
+    width:100%;
     user-select:none;
-`
+    color:black;
+    &:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: -8px;
+        right: 0;
+        background: black;
+        transition: width .4s ease;
+        -webkit-transition: width .4s ease;
+    }
+`;
 
 export const SmallText = styled.div`
     font-size:22px;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight:400;
     line-height:62.74px;
+    width:100%;
     user-select:none;
+    ${props => props.hover && `&:hover::after {
+        width: 100%;
+        left: 0;
+    }`}
 
+    ${props => props.hover && `
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: black;
+        transition: width .4s ease;
+        -webkit-transition: width .4s ease;
+    }
+    `}
+    ${props => props.grey === true && `
+        color:gainsboro;
+    `}
+
+    transition-duration:0.3s;
+
+`
+export const VeryBigText = styled.div`
+    font-size:322.963px;
+    font-weight:400;
+    line-height:419.852px;
+    user-select:none;
 `
