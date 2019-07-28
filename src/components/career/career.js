@@ -9,6 +9,8 @@ const Container = styled.div`
     width:1008px;
     margin-top:300px;
     padding-bottom:300px;
+    position: relative;
+    left:58px;
 `;
 
 const Row = styled.div`
