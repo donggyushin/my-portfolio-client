@@ -15,8 +15,13 @@ const Container = styled.div`
 class Section extends React.Component {
     render() {
         return <Container>
-            <NormalText>안녕, 나는 신동규라고 해. 자칭 게으른 개발자지만 코딩하는걸 굉장히 좋아하지. </NormalText>
-            <NormalText>멋지고 이쁜 유저 인터페이스를 개발할 수 있는 개발자가 되는게 목표야.</NormalText>
+            <NormalText>
+                Hi, I'm shin donggyu. I call myself a lazy developer. But I love coding for fun. Ironic, isn't it?
+                </NormalText>
+            <NormalText>
+                My goal is to be a good developer that makes awesome and pretty UI/UX
+
+                </NormalText>
         </Container>
     }
 }
