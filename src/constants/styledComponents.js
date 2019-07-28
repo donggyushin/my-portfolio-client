@@ -23,6 +23,7 @@ export const BigText = styled.div`
     color:${props => props.white ? 'white' : 'black'};
     /* animation:${FadeIn} 1s ease-in; */
     z-index:3;
+    user-select:none;
 `;
 
 export const DefaultText = styled.div`
