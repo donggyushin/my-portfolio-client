@@ -36,6 +36,7 @@ const Chapter2Title = styled.div`
   color: white;
   line-height: 105.422px;
   user-select: none;
+  line-height: 1.5;
 `;
 
 class Experiences extends React.Component {
