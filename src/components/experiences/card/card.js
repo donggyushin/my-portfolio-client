@@ -7,7 +7,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: flex-start;
   position: relative;
-  left: 344px;
+  /* left: 344px; */
+  left: 30%;
   cursor: pointer;
 `;
 

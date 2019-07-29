@@ -64,7 +64,8 @@ class Experiences extends React.Component {
             <Chapter2Title>of my skills</Chapter2Title>
           </Column>
         </Row>
-        <Slider {...settings}>
+
+        <Slider arrows={false} {...settings}>
           <Card
             name={"React"}
             title={"A JavaScript library"}
