@@ -20,7 +20,7 @@ const Container = styled.div`
 class AppContainer extends React.Component {
   state = {
     scrollTop: 0,
-    loading: false
+    loading: true
   };
 
   componentDidMount() {
