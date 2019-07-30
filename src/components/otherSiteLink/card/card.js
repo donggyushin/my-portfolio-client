@@ -13,8 +13,8 @@ const Number = styled.div`
   font-size: 150px;
   font-weight: 900;
   color: black;
-  position: relative;
-  top: 100px;
+  width: 100%;
+  text-align: center;
 `;
 
 const Image = styled.img`
@@ -50,10 +50,11 @@ class Card extends React.Component {
     const { to, texts, number, image } = this.props;
     return (
       <Container>
-        <Parallax2 y={[-20, 20]} tagOuter="div">
-          <Number>{number}</Number>
-        </Parallax2>
+        {/* <Parallax2 y={[20, -20]} tagOuter="div">
+          
+        </Parallax2> */}
         <Parallax2 y={[20, -20]} tagOuter="div">
+          <Number>{number}</Number>
           <Parallax
             bgImage={require(`../../../assets/${image}`)}
             bgImageAlt="the cat"
