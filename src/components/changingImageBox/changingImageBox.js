@@ -24,7 +24,7 @@ const TextContainer = styled.div`
 `;
 
 const Video = styled.video`
-  width: 103%;
+  width: 150%;
   z-index: 2;
   opacity: ${props => (props.hover ? 1 : 0)};
 `;
