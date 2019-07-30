@@ -18,6 +18,8 @@ const Name = styled.div`
   user-select: none;
   max-width: 600px;
   margin-bottom: 80px;
+  opacity: ${props => (props.white ? 1 : 0.6)};
+  transition-duration: 0.4s;
 `;
 
 const Title = styled.div`
@@ -26,6 +28,8 @@ const Title = styled.div`
   user-select: none;
   max-width: 600px;
   margin-bottom: 30px;
+  opacity: ${props => (props.white ? 1 : 0.6)};
+  transition-duration: 0.4s;
 `;
 
 const Desc = styled.div`
@@ -38,11 +42,11 @@ const Desc = styled.div`
 
 class Card extends React.Component {
   render() {
-    const { name, title, desc } = this.props;
+    const { name, title, desc, page, currentPage } = this.props;
     return (
       <Container>
-        <Name>{name}</Name>
-        <Title>{title}</Title>
+        <Name white={page === currentPage}>{name}</Name>
+        <Title white={page === currentPage}>{title}</Title>
         <Desc>{desc}</Desc>
       </Container>
     );

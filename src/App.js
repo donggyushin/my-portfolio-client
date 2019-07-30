@@ -9,6 +9,8 @@ import MovingVeryBigText from "./components/movingVeryBigText";
 import MyStory from "./components/mystory";
 import Career from "./components/career";
 import Experiences from "./components/experiences";
+import OtherSites from "./components/otherSites";
+import OtherSiteLink from "./components/otherSiteLink";
 
 const Container = styled.div`
   display: flex;
@@ -20,7 +22,7 @@ const Container = styled.div`
 class AppContainer extends React.Component {
   state = {
     scrollTop: 0,
-    loading: true
+    loading: false
   };
 
   componentDidMount() {
@@ -61,6 +63,9 @@ function App({ loading }) {
             <MyStory />
             <Career />
             <Experiences />
+            <MovingVeryBigText text={"Other sites?"} />
+            <OtherSites />
+            <OtherSiteLink />
           </>
         )}
       </Container>

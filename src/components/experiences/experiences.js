@@ -40,6 +40,16 @@ const Chapter2Title = styled.div`
 `;
 
 class Experiences extends React.Component {
+  state = {
+    currentPage: 0
+  };
+
+  onSwipde = index => {
+    this.setState({
+      currentPage: index
+    });
+  };
+
   render() {
     const settings = {
       dots: true,
@@ -48,6 +58,8 @@ class Experiences extends React.Component {
       slidesToShow: 1.2,
       slidesToScroll: 1
     };
+    const { currentPage } = this.state;
+    const { onSwipde } = this;
     return (
       <Container>
         <Row
@@ -66,8 +78,10 @@ class Experiences extends React.Component {
           </Column>
         </Row>
 
-        <Slider arrows={false} {...settings}>
+        <Slider afterChange={onSwipde} arrows={false} {...settings}>
           <Card
+            page={0}
+            currentPage={currentPage}
             name={"React"}
             title={"A JavaScript library"}
             desc={
@@ -75,6 +89,8 @@ class Experiences extends React.Component {
             }
           />
           <Card
+            page={1}
+            currentPage={currentPage}
             name={"RDB"}
             title={"Relational database"}
             desc={
@@ -82,6 +98,8 @@ class Experiences extends React.Component {
             }
           />
           <Card
+            page={2}
+            currentPage={currentPage}
             name={"Express"}
             title={"Web application framework"}
             desc={
@@ -89,6 +107,8 @@ class Experiences extends React.Component {
             }
           />
           <Card
+            currentPage={currentPage}
+            page={3}
             name={"Java"}
             title={"Programing language"}
             desc={
@@ -96,6 +116,8 @@ class Experiences extends React.Component {
             }
           />
           <Card
+            page={4}
+            currentPage={currentPage}
             name={"Python"}
             title={"Programing language"}
             desc={
@@ -103,6 +125,8 @@ class Experiences extends React.Component {
             }
           />
           <Card
+            page={5}
+            currentPage={currentPage}
             name={"Swift"}
             title={"Programing language"}
             desc={
@@ -110,6 +134,8 @@ class Experiences extends React.Component {
             }
           />
           <Card
+            page={6}
+            currentPage={currentPage}
             name={"React Native"}
             title={"JavaScript framework"}
             desc={
@@ -117,6 +143,8 @@ class Experiences extends React.Component {
             }
           />
           <Card
+            page={7}
+            currentPage={currentPage}
             name={"Node.js"}
             title={"Javascript outside of browser"}
             desc={
