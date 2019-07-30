@@ -28,14 +28,14 @@ const MarginBottom = styled.div`
 class AppContainer extends React.Component {
   state = {
     scrollTop: 0,
-    loading: false
+    loading: true
   };
 
   componentDidMount() {
     window.addEventListener("scroll", this.onScroll);
     setTimeout(() => {
       this.finishLoading();
-    }, 2000);
+    }, 5000);
   }
 
   render() {
