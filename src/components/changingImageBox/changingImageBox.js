@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Parallax } from "react-scroll-parallax";
 
 const Container = styled.div`
   display: flex;
@@ -102,23 +103,27 @@ class ChangingImageBox extends React.Component {
             </WhiteText>
           </Row>
         </TextContainer>
-        <ImageContainer
-          style={{
-            marginRight: 120
-          }}
-        >
-          <Image src={require("../../assets/instagram1.jpg")} />
-        </ImageContainer>
-        <Column>
-          <ImageContainer>
-            <Image
-              style={{
-                position: "relative",
-                top: 6
-              }}
-              src={require("../../assets/instagram2.jpg")}
-            />
+        <Parallax y={[-20, 20]} tagOuter="div">
+          <ImageContainer
+            style={{
+              marginRight: 120
+            }}
+          >
+            <Image src={require("../../assets/instagram1.jpg")} />
           </ImageContainer>
+        </Parallax>
+        <Column>
+          <Parallax y={[20, -20]} tagOuter="div">
+            <ImageContainer>
+              <Image
+                style={{
+                  position: "relative",
+                  top: 6
+                }}
+                src={require("../../assets/instagram2.jpg")}
+              />
+            </ImageContainer>
+          </Parallax>
         </Column>
         <TextContainer>
           <Video autoPlay playsinline muted loop hover={hover}>
