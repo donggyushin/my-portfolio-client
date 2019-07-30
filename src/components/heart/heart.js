@@ -22,6 +22,7 @@ const Container = styled.div`
   animation: ${HeartBeat};
   animation-duration: 0.8s;
   animation-iteration-count: infinite;
+  user-select: none;
 `;
 
 class Heart extends React.Component {
