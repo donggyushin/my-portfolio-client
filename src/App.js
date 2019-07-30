@@ -11,12 +11,18 @@ import Career from "./components/career";
 import Experiences from "./components/experiences";
 import OtherSites from "./components/otherSites";
 import OtherSiteLink from "./components/otherSiteLink";
+import ChangingImageBox from "./components/changingImageBox";
+import Heart from "./components/heart";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   min-width: 1300px;
+`;
+
+const MarginBottom = styled.div`
+  height: 200px;
 `;
 
 class AppContainer extends React.Component {
@@ -66,6 +72,9 @@ function App({ loading }) {
             <MovingVeryBigText text={"Other sites?"} />
             <OtherSites />
             <OtherSiteLink />
+            <ChangingImageBox />
+            <Heart />
+            <MarginBottom />
           </>
         )}
       </Container>
