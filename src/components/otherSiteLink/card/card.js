@@ -15,6 +15,8 @@ const Number = styled.div`
   color: black;
   width: 100%;
   text-align: center;
+  user-select: none;
+  margin-bottom: 91px;
 `;
 
 const Image = styled.img`
