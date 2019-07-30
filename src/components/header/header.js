@@ -1,25 +1,25 @@
-import React from 'react';
-import styled from 'styled-components';
-import { BigText, Image } from '../../constants/styledComponents'
-import { Parallax } from 'react-parallax'
+import React from "react";
+import styled from "styled-components";
+import { BigText, Image } from "../../constants/styledComponents";
+import { Parallax } from "react-parallax";
 // import { Parallax } from 'react-scroll-parallax';
 
 const Container = styled.div`
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 `;
 
 const ImageContainer = styled.div`
-    width:80%;
-`
+  width: 80%;
+`;
 
 class Header extends React.Component {
-    render() {
-        return <Container>
-
-            {/* <BigText >LAZY</BigText>
+  render() {
+    return (
+      <Container>
+        {/* <BigText >LAZY</BigText>
             <BigText>DEVELOPER</BigText>
 
             <Parallax y={[-20, 0]} tagOuter="div">
@@ -29,28 +29,32 @@ class Header extends React.Component {
                     </ImageContainer>
                 </Container>
             </Parallax> */}
-            <Container style={{
-                position: 'relative',
-                top: 93,
-                marginTop: -50
-            }}>
-                <BigText >LAZY</BigText>
-                <BigText>DEVELOPER</BigText>
-            </Container>
-
-            <Parallax
-                bgImage={require('../../assets/digital-nomad.jpg')}
-                bgImageAlt="the cat"
-                strength={300}
-            >
-                <div style={{
-                    width: 1200,
-                    height: 700
-                }} />
-            </Parallax>
-
+        <Container
+          style={{
+            position: "relative",
+            top: 93,
+            marginTop: -50
+          }}
+        >
+          <BigText>LAZY</BigText>
+          <BigText>DEVELOPER</BigText>
         </Container>
-    }
+
+        <Parallax
+          bgImage={require("../../assets/digital-nomad.jpg")}
+          bgImageAlt="the cat"
+          strength={400}
+        >
+          <div
+            style={{
+              width: 1200,
+              height: 700
+            }}
+          />
+        </Parallax>
+      </Container>
+    );
+  }
 }
 
-export default Header
+export default Header;
