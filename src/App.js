@@ -13,6 +13,7 @@ import OtherSites from "./components/otherSites";
 import OtherSiteLink from "./components/otherSiteLink";
 import ChangingImageBox from "./components/changingImageBox";
 import Heart from "./components/heart";
+import SendEmailToMe from "./components/sendEmailToMe";
 
 const Container = styled.div`
   display: flex;
@@ -104,7 +105,9 @@ function App({ loading }) {
                 ]}
               />
             </div>
+
             <Heart />
+            <SendEmailToMe />
             <MarginBottom />
           </>
         )}
