@@ -28,7 +28,7 @@ const MarginBottom = styled.div`
 class AppContainer extends React.Component {
   state = {
     scrollTop: 0,
-    loading: true
+    loading: false
   };
 
   componentDidMount() {
@@ -70,9 +70,40 @@ function App({ loading }) {
             <Career />
             <Experiences />
             <MovingVeryBigText text={"Other sites?"} />
-            <OtherSites />
+            <OtherSites
+              title={"Other sites"}
+              descs={[
+                `I have some other sites too. Luckily I started naver blog from my
+            beginning of online shopping mall. So I can easily started naver
+            blog with my beginning of learning programing. It worked well for me
+            as a one of my portfolio site, so I can easily get my first
+            outsouring project.`,
+                `I like watching videos on youtube for fun. Someday I thought that
+            how about open my personal youtube channel? Then I can upload my
+            projects in video, it will be awesome! So I opened my personal
+            youtube channel also.`,
+                `Last, I have my own github of course, like every other programer
+            does. You can see how I love coding in my free time! There are a lot
+            of repositories. It will be my pleasure when you follow my git
+            account. Let's share our experiences, and if it possible, let's
+            start our awesome project together!`
+              ]}
+            />
             <OtherSiteLink />
             <ChangingImageBox />
+            <div
+              style={{
+                marginTop: 300
+              }}
+            >
+              <OtherSites
+                title={"Comming soon"}
+                descs={[
+                  `It's not the end of my story, I will experience many cases from now on, and those experiences will be shown here. I will be back with variety of experiences and projects that surprises you. `,
+                  `So please wait for me. `
+                ]}
+              />
+            </div>
             <Heart />
             <MarginBottom />
           </>

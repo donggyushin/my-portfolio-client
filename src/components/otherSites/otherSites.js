@@ -33,32 +33,16 @@ const Desc = styled.div`
 
 class OtherSites extends React.Component {
   render() {
+    const { title, descs } = this.props;
     return (
       <Container>
         <Column>
-          <Title>Other sites</Title>
+          <Title>{title}</Title>
         </Column>
         <Column>
-          <Desc>
-            I have some other sites too. Luckily I started naver blog from my
-            beginning of online shopping mall. So I can easily started naver
-            blog with my beginning of learning programing. It worked well for me
-            as a one of my portfolio site, so I can easily get my first
-            outsouring project.
-          </Desc>
-          <Desc>
-            I like watching videos on youtube for fun. Someday I thought that
-            how about open my personal youtube channel? Then I can upload my
-            projects in video, it will be awesome! So I opened my personal
-            youtube channel also.
-          </Desc>
-          <Desc>
-            Last, I have my own github of course, like every other programer
-            does. You can see how I love coding in my free time! There are a lot
-            of repositories. It will be my pleasure when you follow my git
-            account. Let's share our experiences, and if it possible, let's
-            start our awesome project together!
-          </Desc>
+          {descs.map(desc => (
+            <Desc>{desc}</Desc>
+          ))}
         </Column>
       </Container>
     );
