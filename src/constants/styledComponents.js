@@ -30,7 +30,7 @@ export const NormalText = styled.div`
 `;
 
 export const BigText = styled.div`
-    font-size:238.519px;
+    font-size:205.519px;
     font-weight:400;
     line-height:210.37px;
     color:${props => (props.white ? "white" : "black")};
@@ -149,7 +149,7 @@ export const SmallText = styled.div`
 
 `;
 export const VeryBigText = styled.div`
-  font-size: 322.963px;
+  font-size: 278.963px;
   font-weight: 400;
   line-height: 419.852px;
   user-select: none;

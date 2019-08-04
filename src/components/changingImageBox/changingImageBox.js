@@ -32,7 +32,7 @@ const Video = styled.video`
 
 const WhiteText = styled.div`
   color: white;
-  font-size: 139.259px;
+  font-size: 130.259px;
   user-select: none;
   z-index: 3;
   ${props =>
