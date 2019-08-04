@@ -17,7 +17,7 @@ export const Image = styled.img`
 export const NormalText = styled.div`
   font-family: "Open Sans", sans-serif;
   font-family: "Noto Sans TC", sans-serif;
-  font-size: 84.8px;
+  font-size: 75.8px;
   line-height: 131.04px;
   user-select: none;
   width: 100%;
