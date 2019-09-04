@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a1f0b7f.chunk.css",
+    "main.js": "/static/js/main.dfdc329e.chunk.js",
+    "main.js.map": "/static/js/main.dfdc329e.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/css/2.18585a14.chunk.css": "/static/css/2.18585a14.chunk.css",
+    "static/js/2.afc4825c.chunk.js": "/static/js/2.afc4825c.chunk.js",
+    "static/js/2.afc4825c.chunk.js.map": "/static/js/2.afc4825c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e18bb4a5c338135908cb499629c6b8cc.js": "/precache-manifest.e18bb4a5c338135908cb499629c6b8cc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.18585a14.chunk.css.map": "/static/css/2.18585a14.chunk.css.map",
+    "static/css/main.9a1f0b7f.chunk.css.map": "/static/css/main.9a1f0b7f.chunk.css.map",
+    "static/media/city.jpg": "/static/media/city.31c56511.jpg",
+    "static/media/digital-nomad.jpg": "/static/media/digital-nomad.3bba3cca.jpg",
+    "static/media/github.jpeg": "/static/media/github.aae280c2.jpeg",
+    "static/media/instagram1.jpg": "/static/media/instagram1.0469dd01.jpg",
+    "static/media/instagram2.jpg": "/static/media/instagram2.bd8d593f.jpg",
+    "static/media/instagram3.mp4": "/static/media/instagram3.df4bcc74.mp4",
+    "static/media/naver.jpg": "/static/media/naver.d03ae745.jpg",
+    "static/media/naver.jpeg": "/static/media/naver.ffa4d38e.jpeg",
+    "static/media/slick-theme.css": "/static/media/slick.f97e3bbf.svg",
+    "static/media/treduler.jpg": "/static/media/treduler.70616472.jpg",
+    "static/media/workspace.jpg": "/static/media/workspace.7b16fe6f.jpg",
+    "static/media/youtube.jpeg": "/static/media/youtube.086dfb77.jpeg"
+  }
+}

@@ -35,6 +35,12 @@ class OtherSiteSlick extends React.Component {
           number={"03"}
           texts={["GITHUB"]}
         />
+        <Card
+          to={"https://www.treduler.com"}
+          image="treduler.jpg"
+          number={"04"}
+          texts={["Treduler"]}
+        />
       </Container>
     );
   }
