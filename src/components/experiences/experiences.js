@@ -91,6 +91,15 @@ class Experiences extends React.Component {
           <Card
             page={1}
             currentPage={currentPage}
+            name={"Graphql"}
+            title={"GraphQL is a query language for your API."}
+            desc={
+              "server-side runtime for executing queries by using a type system you define for your data. GraphQL isn't tied to any specific database or storage engine and is instead backed by your existing code and data."
+            }
+          />
+          <Card
+            page={2}
+            currentPage={currentPage}
             name={"RDB"}
             title={"Relational database"}
             desc={
@@ -98,7 +107,7 @@ class Experiences extends React.Component {
             }
           />
           <Card
-            page={2}
+            page={3}
             currentPage={currentPage}
             name={"Express"}
             title={"Web application framework"}
@@ -108,7 +117,7 @@ class Experiences extends React.Component {
           />
           <Card
             currentPage={currentPage}
-            page={3}
+            page={4}
             name={"Java"}
             title={"Programing language"}
             desc={
@@ -116,7 +125,7 @@ class Experiences extends React.Component {
             }
           />
           <Card
-            page={4}
+            page={5}
             currentPage={currentPage}
             name={"Python"}
             title={"Programing language"}
@@ -125,7 +134,7 @@ class Experiences extends React.Component {
             }
           />
           <Card
-            page={5}
+            page={6}
             currentPage={currentPage}
             name={"Swift"}
             title={"Programing language"}
@@ -134,7 +143,7 @@ class Experiences extends React.Component {
             }
           />
           <Card
-            page={6}
+            page={7}
             currentPage={currentPage}
             name={"React Native"}
             title={"JavaScript framework"}
@@ -143,12 +152,34 @@ class Experiences extends React.Component {
             }
           />
           <Card
-            page={7}
+            page={8}
             currentPage={currentPage}
             name={"Node.js"}
             title={"Javascript outside of browser"}
             desc={
               "Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser."
+            }
+          />
+          <Card
+            page={9}
+            currentPage={currentPage}
+            name={"Redux"}
+            title={
+              "Redux is a predictable state container for JavaScript apps."
+            }
+            desc={
+              "Redux makes it easy to manage the state of your application. Another way of looking at this – it helps you manage the data you display and how you respond to user actions."
+            }
+          />
+          <Card
+            page={10}
+            currentPage={currentPage}
+            name={"Apollo Graphql"}
+            title={
+              "A single versatile query system to replace a patchwork of legacy APIs"
+            }
+            desc={
+              "A new generation of apps requires a new approach to APIs. GraphQL is the industry-standard technology for moving data between modern applications and the cloud."
             }
           />
         </Slider>
